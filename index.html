@@ -6,37 +6,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     
-<!-- barre navigation -->
-
+<!-- BARRE DE NAVIGATION -->
 <section class="text">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
-        <img class="img1" src="logo/ChatGPT Image 2 sept. 2026, 11_59_29.png" alt="">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">accueil</a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Contact</a>
-        </li>
-        
-       
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar">
+
+        <div class="navbar-left">
+
+            <!-- Icône menu -->
+            <button class="nav-icon" type="button" title="Menu">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <!-- Icône recherche -->
+            <button class="nav-icon" type="button" title="Recherche">
+                <i class="bi bi-search"></i>
+            </button>
+
+        </div>
+
+        <!-- Logo au centre -->
+        <a class="navbar-brand" href="#">
+            <img class="img1"
+                 src="logo/ChatGPT Image 2 sept. 2026, 11_59_29.png"
+                 alt="Logo">
+        </a>
+
+        <!-- Panier à droite -->
+        <button class="nav-icon cart-icon" type="button" title="Panier">
+            <i class="bi bi-bag-fill"></i>
+            <span class="cart-count">0</span>
+        </button>
+
+    </nav>
 </section>
 
 <!-- partie image -->
@@ -49,13 +54,12 @@
 <div class="row g-4">
 
     <!-- 01 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="i1/IMG_2520.jpeg" alt="">
                 <h5 class="card-title">PlayStation 4 slim</h5>
                 <p class="price">CFA 650,000</p>
-                <p class="card-text">Smartphone Apple haut de gamme avec puce A17 Pro.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="PlayStation 4 slim"
                     data-price="650000"
@@ -67,13 +71,12 @@
     </div>
 
     <!-- 02 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="i1/IMG_2521.jpeg" alt="">
-                <h5 class="card-title">PlayStation 5</h5>
+                <h5 class="card-title">PlayStation 5 slim</h5>
                 <p class="price">CFA 575,000</p>
-                <p class="card-text">Smartphone Android premium avec écran AMOLED.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="PlayStation 5"
                     data-price="575000"
@@ -85,13 +88,12 @@
     </div>
 
     <!-- 03 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="i1/IMG_2522.jpeg" alt="">
                 <h5 class="card-title">Manette PS5</h5>
                 <p class="price">CFA 850,000</p>
-                <p class="card-text">Ordinateur portable Apple léger et puissant.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="Manette PS5"
                     data-price="850000"
@@ -103,13 +105,12 @@
     </div>
 
     <!-- 04 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="i1/IMG_2523.jpeg" alt="">
                 <h5 class="card-title">Manette PS5 noire</h5>
                 <p class="price">CFA 780,000</p>
-                <p class="card-text">Laptop professionnel performant avec écran haute résolution.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="Manette PS5 noire"
                     data-price="780000"
@@ -121,13 +122,12 @@
     </div>
 
     <!-- 05 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="i1/IMG_2525.jpeg" alt="">
                 <h5 class="card-title">Spider-Man 2</h5>
                 <p class="price">CFA 280,000</p>
-                <p class="card-text">Montre connectée élégante avec suivi de santé et sport.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="Spider-Man 2"
                     data-price="280000"
@@ -139,13 +139,12 @@
     </div>
 
     <!-- 06 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="i1/IMG_2526.jpeg" alt="">
                 <h5 class="card-title">Gta 5</h5>
                 <p class="price">CFA 210,000</p>
-                <p class="card-text">Montre connectée Android avec suivi sportif avancé.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="Gta 5"
                     data-price="210000"
@@ -157,13 +156,12 @@
     </div>
 
     <!-- 07 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="i1/IMG_2527.jpeg" alt="">
                 <h5 class="card-title">NBA 2K26</h5>
                 <p class="price">CFA 220,000</p>
-                <p class="card-text">Casque sans fil avec réduction de bruit active.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="NBA 2K26"
                     data-price="220000"
@@ -175,13 +173,12 @@
     </div>
 
     <!-- 08 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="i1/IMG_2528.jpeg" alt="">
                 <h5 class="card-title">UFC 5</h5>
                 <p class="price">CFA 165,000</p>
-                <p class="card-text">Écouteurs sans fil Apple avec réduction de bruit.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="UFC 5"
                     data-price="165000"
@@ -193,13 +190,12 @@
     </div>
 
     <!-- 09 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="i1/IMG_2529.jpeg" alt="">
                 <h5 class="card-title">EA Sports FC 25</h5>
                 <p class="price">CFA 85,000</p>
-                <p class="card-text">Casque Bluetooth confortable avec réduction de bruit.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="EA Sports FC 25"
                     data-price="85000"
@@ -211,13 +207,12 @@
     </div>
 
     <!-- 10 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="i1/IMG_2531.jpeg" alt="">
                 <h5 class="card-title">Xbox Series S</h5>
                 <p class="price">CFA 95,000</p>
-                <p class="card-text">Enceinte Bluetooth portable avec son puissant.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="Xbox Series S"
                     data-price="95000"
@@ -230,13 +225,12 @@
 
    
     <!-- 12 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im2/IMG_2533.jpeg" alt="">
                 <h5 class="card-title">Call of Duty: Modern Warfare III</h5>
                 <p class="price">CFA 950,000</p>
-                <p class="card-text">Ordinateur gaming puissant avec éclairage RGB.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="Call of Duty: Modern Warfare III"
                     data-price="950000"
@@ -248,13 +242,12 @@
     </div>
 
     <!-- 13 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im2/IMG_2534.jpeg" alt="">
                 <h5 class="card-title">Fortnite</h5>
                 <p class="price">CFA 390,000</p>
-                <p class="card-text">Console nouvelle génération avec SSD ultra rapide.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="Fortnite"
                     data-price="390000"
@@ -266,13 +259,12 @@
     </div>
 
     <!-- 14 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im2/IMG_2536.jpeg" alt="">
                 <h5 class="card-title">Carte PlayStation Plus</h5>
                 <p class="price">CFA 75,000</p>
-                <p class="card-text">Manette sans fil avec retour haptique immersif.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="Carte PlayStation Plus"
                     data-price="75000"
@@ -284,13 +276,12 @@
     </div>
 
     <!-- 15 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im2/IMG_2537.jpeg" alt="">
                 <h5 class="card-title">PlayStation Portal</h5>
                 <p class="price">CFA 400,000</p>
-                <p class="card-text">Console Microsoft nouvelle génération.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="PlayStation Portal"
                     data-price="400000"
@@ -302,13 +293,12 @@
     </div>
 
     <!-- 16 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im3/IMG_2544.jpeg" alt="">
                 <h5 class="card-title">Casque Gaming</h5>
                 <p class="price">CFA 260,000</p>
-                <p class="card-text">Console hybride avec magnifique écran OLED.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="Casque Gaming"
                     data-price="260000"
@@ -322,13 +312,12 @@
    
 
     <!-- 18 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im2/IMG_2540.jpeg" alt="">
                 <h5 class="card-title">NBA 2K27</h5>
                 <p class="price">CFA 35,000</p>
-                <p class="card-text">Souris gaming précise avec capteur haute performance.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="NBA 2K27"
                     data-price="35000"
@@ -340,15 +329,14 @@
     </div>
 
     <!-- 19 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im2/IMG_2542.jpeg" alt="">
                 <h5 class="card-title">Écran Gaming Full HD</h5>
                 <p class="price">CFA 65,000</p>
-                <p class="card-text">Webcam Full HD pour visioconférences et streaming.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Écran Gaming"
+                    data-name="Écran Gaming Full HD"
                     data-price="65000"
                     data-description="">
                     Ajouter au panier
@@ -360,17 +348,16 @@
     
 
     <!-- 21 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
             <img src="im3/IMG_2548.jpeg" alt="">
-                <h5 class="card-title">Lenovo ThinkPad</h5>
+                <h5 class="card-title"> Power Bank 20 000 mAh</h5>
                 <p class="price">CFA 480,000</p>
-                <p class="card-text">Laptop professionnel fiable pour le travail quotidien.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Lenovo ThinkPad"
+                    data-name="Power Bank 20 000 mAh"
                     data-price="480000"
-                    data-description="Laptop professionnel fiable pour le travail quotidien.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -378,17 +365,16 @@
     </div>
 
     <!-- 22 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im3/IMG_2549.jpeg" alt="">
-                <h5 class="card-title">HP Pavilion</h5>
+                <h5 class="card-title">Power Bank</h5>
                 <p class="price">CFA 450,000</p>
-                <p class="card-text">Ordinateur portable polyvalent et élégant.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="HP Pavilion"
+                    data-name="Power Bank"
                     data-price="450000"
-                    data-description="Ordinateur portable polyvalent et élégant.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -396,17 +382,16 @@
     </div>
 
     <!-- 23 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im3/IMG_2550.jpeg" alt="">
-                <h5 class="card-title">iPad Air</h5>
+                <h5 class="card-title">Apple MagSafe Battery Pack</h5>
                 <p class="price">CFA 430,000</p>
-                <p class="card-text">Tablette Apple fine et puissante avec écran Retina.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="iPad Air"
+                    data-name="Apple MagSafe Battery Pack"
                     data-price="430000"
-                    data-description="Tablette Apple fine et puissante avec écran Retina.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -414,17 +399,16 @@
     </div>
 
     <!-- 24 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im3/IMG_2551.jpeg" alt="">
-                <h5 class="card-title">Samsung Galaxy Tab S9</h5>
+                <h5 class="card-title">JBL Boombox 3</h5>
                 <p class="price">CFA 390,000</p>
-                <p class="card-text">Tablette Android premium avec écran AMOLED.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Samsung Galaxy Tab S9"
+                    data-name="JBL Boombox 3"
                     data-price="390000"
-                    data-description="Tablette Android premium avec écran AMOLED.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -434,17 +418,16 @@
    
 
     <!-- 26 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im3/IMG_2554.jpeg" alt="">
-                <h5 class="card-title">Power Bank 20 000 mAh</h5>
+                <h5 class="card-title">Apple AirPods Max Argent</h5>
                 <p class="price">CFA 30,000</p>
-                <p class="card-text">Batterie externe haute capacité pour vos appareils.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Power Bank 20 000 mAh"
+                    data-name="Apple AirPods Max"
                     data-price="30000"
-                    data-description="Batterie externe haute capacité pour vos appareils.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -452,17 +435,16 @@
     </div>
 
     <!-- 27 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im4/IMG_2555.jpeg" alt="">
-                <h5 class="card-title">Coque iPhone Premium</h5>
+                <h5 class="card-title">Apple AirPods Max Rose</h5>
                 <p class="price">CFA 15,000</p>
-                <p class="card-text">Coque élégante et résistante pour iPhone.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Coque iPhone Premium"
+                    data-name="Apple AirPods Max"
                     data-price="15000"
-                    data-description="Coque élégante et résistante pour iPhone.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -470,17 +452,16 @@
     </div>
 
     <!-- 28 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im4/IMG_2556.jpeg" alt="">
-                <h5 class="card-title">Google Pixel 9</h5>
+                <h5 class="card-title">Apple AirPods Max Vert</h5>
                 <p class="price">CFA 520,000</p>
-                <p class="card-text">Smartphone Google avec appareil photo intelligent.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Google Pixel 9"
+                    data-name="Apple AirPods Max"
                     data-price="520000"
-                    data-description="Smartphone Google avec appareil photo intelligent.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -488,17 +469,16 @@
     </div>
 
     <!-- 29 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im4/IMG_2557.jpeg" alt="">
-                <h5 class="card-title">OnePlus 12</h5>
+                <h5 class="card-title">Apple AirPods Max Noir</h5>
                 <p class="price">CFA 495,000</p>
-                <p class="card-text">Smartphone Android rapide avec écran haute fréquence.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="OnePlus 12"
+                    data-name="Apple AirPods Max Noir"
                     data-price="495000"
-                    data-description="Smartphone Android rapide avec écran haute fréquence.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -506,17 +486,16 @@
     </div>
 
     <!-- 30 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im4/IMG_2558.jpeg" alt="">
-                <h5 class="card-title">Xiaomi 14</h5>
+                <h5 class="card-title">Enceinte Moniteur</h5>
                 <p class="price">CFA 390,000</p>
-                <p class="card-text">Smartphone premium avec caméra haute résolution.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Xiaomi 14"
+                    data-name="Enceinte Moniteur"
                     data-price="390000"
-                    data-description="Smartphone premium avec caméra haute résolution.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -524,17 +503,16 @@
     </div>
 
     <!-- 31 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im4/IMG_2559.jpeg" alt="">
-                <h5 class="card-title">Apple AirTag</h5>
+                <h5 class="card-title">Fifine Microphone USB/XLR dynamique avec éclairage RGB</h5>
                 <p class="price">CFA 35,000</p>
-                <p class="card-text">Localisez facilement vos objets importants.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Apple AirTag"
+                    data-name="Fifine Microphone USB/XLR dynamique avec éclairage RGB"
                     data-price="35000"
-                    data-description="Localisez facilement vos objets importants.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -542,17 +520,16 @@
     </div>
 
     <!-- 32 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im4/IMG_2560.jpeg" alt="">
-                <h5 class="card-title">Bracelet Connecté</h5>
+                <h5 class="card-title">Fifine Microphone USB/XLR dynamique avec éclairage RGB</h5>
                 <p class="price">CFA 45,000</p>
-                <p class="card-text">Suivi de l'activité physique et notifications.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Bracelet Connecté"
+                    data-name="Fifine Microphone USB/XLR dynamique avec éclairage RGB"
                     data-price="45000"
-                    data-description="Suivi de l'activité physique et notifications.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -562,17 +539,16 @@
     
 
     <!-- 34 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im4/IMG_2562.jpeg" alt="">
-                <h5 class="card-title">Enceinte Bluetooth Pro</h5>
+                <h5 class="card-title">Microphone DJI</h5>
                 <p class="price">CFA 120,000</p>
-                <p class="card-text">Enceinte portable avec son stéréo puissant.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Enceinte Bluetooth Pro"
+                    data-name="Microphone DJI"
                     data-price="120000"
-                    data-description="Enceinte portable avec son stéréo puissant.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -580,17 +556,16 @@
     </div>
 
     <!-- 35 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im4/IMG_2563.jpeg" alt="">
-                <h5 class="card-title">Casque Gaming Pro</h5>
+                <h5 class="card-title">DJI Osmo Pocket 4</h5>
                 <p class="price">CFA 60,000</p>
-                <p class="card-text">Casque gaming avec microphone intégré.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Casque Gaming Pro"
+                    data-name="DJI Osmo Pocket 4"
                     data-price="60000"
-                    data-description="Casque gaming avec microphone intégré.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -598,17 +573,16 @@
     </div>
 
     <!-- 36 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im4/IMG_2564.jpeg" alt="">
-                <h5 class="card-title">Clavier Sans Fil</h5>
+                <h5 class="card-title">DJI Osmo Action 4</h5>
                 <p class="price">CFA 30,000</p>
-                <p class="card-text">Clavier compact et confortable pour ordinateur.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Clavier Sans Fil"
+                    data-name="DJI Osmo Action 4"
                     data-price="30000"
-                    data-description="Clavier compact et confortable pour ordinateur.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -616,55 +590,35 @@
     </div>
 
     <!-- 37 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im5/IMG_2565.jpeg" alt="">
-                <h5 class="card-title">Souris Sans Fil</h5>
+                <h5 class="card-title">DJI Osmo Mobile 6</h5>
                 <p class="price">CFA 25,000</p>
-                <p class="card-text">Souris ergonomique et silencieuse.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Souris Sans Fil"
+                    data-name="DJI Osmo Mobile 6"
                     data-price="25000"
-                    data-description="Souris ergonomique et silencieuse.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
         </div>
     </div>
 
-   
 
-    <!-- 39 -->
-    <div class="col-4">
-        <div class="card product-card h-100">
-            <div class="card-body">
-                <img src="im5/IMG_2567.jpeg" alt="">
-                <h5 class="card-title">Hub USB-C 7-en-1</h5>
-                <p class="price">CFA 45,000</p>
-                <p class="card-text">Ajoutez plusieurs ports à votre ordinateur portable.</p>
-                <button class="btn btn-primary add-to-cart"
-                    data-name="Hub USB-C 7-en-1"
-                    data-price="45000"
-                    data-description="Ajoutez plusieurs ports à votre ordinateur portable.">
-                    Ajouter au panier
-                </button>
-            </div>
-        </div>
-    </div>
 
     <!-- 40 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im5/IMG_2568.jpeg" alt="">
-                <h5 class="card-title">Câble USB-C Premium</h5>
+                <h5 class="card-title">Apple Watch Serie 6 </h5>
                 <p class="price">CFA 12,000</p>
-                <p class="card-text">Câble rapide et résistant pour recharge et données.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Câble USB-C Premium"
+                    data-name="Apple Watch Serie 6"
                     data-price="12000"
-                    data-description="Câble rapide et résistant pour recharge et données.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -672,17 +626,16 @@
     </div>
 
     <!-- 41 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im5/IMG_2569.jpeg" alt="">
-                <h5 class="card-title">SSD Externe 1 To</h5>
+                <h5 class="card-title">AirPod Pro 2</h5>
                 <p class="price">CFA 95,000</p>
-                <p class="card-text">Stockage externe rapide et compact.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="SSD Externe 1 To"
+                    data-name="AirPod Pro 2"
                     data-price="95000"
-                    data-description="Stockage externe rapide et compact.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -690,17 +643,16 @@
     </div>
 
     <!-- 42 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="im5/IMG_2571.jpeg" alt="">
-                <h5 class="card-title">Disque Dur Externe 2 To</h5>
+                <h5 class="card-title">Whoop</h5>
                 <p class="price">CFA 75,000</p>
-                <p class="card-text">Grande capacité pour sauvegarder vos fichiers.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Disque Dur Externe 2 To"
+                    data-name="Whoop"
                     data-price="75000"
-                    data-description="Grande capacité pour sauvegarder vos fichiers.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -712,17 +664,16 @@
    
 
     <!-- 47 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="img6/IMG_2576.jpeg" alt="">
-                <h5 class="card-title">Ring Light LED</h5>
+                <h5 class="card-title">RØDE NT1 Signature Serie Noir </h5>
                 <p class="price">CFA 40,000</p>
-                <p class="card-text">Éclairage LED réglable pour photos et vidéos.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Ring Light LED"
+                    data-name="RØDE NT1 Signature Serie Noir"
                     data-price="40000"
-                    data-description="Éclairage LED réglable pour photos et vidéos.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -730,18 +681,17 @@
     </div>
 
     <!-- 48 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="img6/IMG_2577.jpeg" alt="">
 
-                <h5 class="card-title">Appareil Photo Canon</h5>
+                <h5 class="card-title">RØDE PodMic Noir – Microphone dynamique</h5>
                 <p class="price">CFA 650,000</p>
-                <p class="card-text">Appareil photo numérique pour créateurs.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Appareil Photo Canon"
+                    data-name="RØDE PodMic Noir – Microphone dynamiqu"
                     data-price="650000"
-                    data-description="Appareil photo numérique pour créateurs.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -749,17 +699,16 @@
     </div>
 
     <!-- 49 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="img6/IMG_2578.jpeg" alt="">
-                <h5 class="card-title">Écouteurs Bluetooth Pro</h5>
+                <h5 class="card-title">Boya Mini</h5>
                 <p class="price">CFA 45,000</p>
-                <p class="card-text">Écouteurs sans fil avec boîtier de recharge.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Écouteurs Bluetooth Pro"
+                    data-name="Boya Mini"
                     data-price="45000"
-                    data-description="Écouteurs sans fil avec boîtier de recharge.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -767,17 +716,16 @@
     </div>
 
     <!-- 50 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="img6/IMG_2579.jpeg" alt="">
-                <h5 class="card-title">Adaptateur HDMI USB-C</h5>
+                <h5 class="card-title">3 en 1 Microphone</h5>
                 <p class="price">CFA 25,000</p>
-                <p class="card-text">Connectez votre ordinateur à un écran externe.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Adaptateur HDMI USB-C"
+                    data-name=">3 en 1 Microphone"
                     data-price="25000"
-                    data-description="Connectez votre ordinateur à un écran externe.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -785,17 +733,16 @@
     </div>
 
     <!-- 51 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="img6/IMG_2580.jpeg" alt="">
-                <h5 class="card-title">Mini PC Intel</h5>
+                <h5 class="card-title">Chargeur iPhone</h5>
                 <p class="price">CFA 280,000</p>
-                <p class="card-text">Ordinateur compact idéal pour bureau et maison.</p>
                 <button class="btn btn-primary add-to-cart"
-                    data-name="Mini PC Intel"
+                    data-name="Chargeur iPhone"
                     data-price="280000"
-                    data-description="Ordinateur compact idéal pour bureau et maison.">
+                    data-description="">
                     Ajouter au panier
                 </button>
             </div>
@@ -806,13 +753,12 @@
 
 
     <!-- 57 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="img7/IMG_2589.jpeg" alt="">
                 <h5 class="card-title">Routeur WiFi 6</h5>
                 <p class="price">CFA 90,000</p>
-                <p class="card-text">Connexion WiFi rapide et stable pour toute la maison.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="Routeur WiFi 6"
                     data-price="90000"
@@ -824,13 +770,12 @@
     </div>
 
     <!-- 58 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="img7/IMG_2590.jpeg" alt="">
                 <h5 class="card-title">Switch Ethernet 8 Ports</h5>
                 <p class="price">CFA 45,000</p>
-                <p class="card-text">Solution pratique pour connecter plusieurs appareils.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="Switch Ethernet 8 Ports"
                     data-price="45000"
@@ -842,13 +787,12 @@
     </div>
 
     <!-- 59 -->
-    <div class="col-4">
+    <div class="col-6 col-md-4">
         <div class="card product-card h-100">
             <div class="card-body">
                 <img src="img7/IMG_2591.jpeg" alt="">
                 <h5 class="card-title">Lampe LED Intelligente</h5>
                 <p class="price">CFA 25,000</p>
-                <p class="card-text">Lampe connectée contrôlable depuis votre smartphone.</p>
                 <button class="btn btn-primary add-to-cart"
                     data-name="Lampe LED Intelligente"
                     data-price="25000"
