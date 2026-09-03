@@ -1,3 +1,7 @@
+/* =====================================================
+   LOGO
+   ===================================================== */
+
 .img1 {
     height: 30px;
     width: 30px;
@@ -5,9 +9,16 @@
 
 
 /* =====================================================
-   PRODUCT CARDS — DIA TECHBROS
-   3 CARDS PER ROW
-   IMAGES + BOUTONS PARFAITEMENT ALIGNÉS
+   GRILLE PRODUITS
+   ===================================================== */
+
+.row.g-4 {
+    margin: 0;
+}
+
+
+/* =====================================================
+   PRODUCT CARD
    ===================================================== */
 
 .product-card {
@@ -15,14 +26,17 @@
     border-radius: 14px;
     overflow: hidden;
     background: #ffffff;
+
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 
-    /* Toutes les cartes prennent la même hauteur */
     height: 100%;
 
     display: flex;
     flex-direction: column;
 }
+
+
+/* Effet ordinateur */
 
 .product-card:hover {
     transform: translateY(-5px);
@@ -31,40 +45,38 @@
 
 
 /* =====================================================
-   PRODUCT IMAGE
-   ===================================================== */
-
-.product-image {
-    width: 100%;
-
-    /* TOUTES les zones d'image ont exactement la même hauteur */
-    height: 300px;
-
-    display: block;
-
-    object-fit: contain;
-
-    background: #ffffff;
-
-    padding: 15px;
-
-    /* Empêche l'image de changer la hauteur de la carte */
-    flex-shrink: 0;
-}
-
-
-/* =====================================================
-   CARD CONTENT
+   CONTENU DE LA CARTE
    ===================================================== */
 
 .product-card .card-body {
-    padding: 18px;
+    padding: 15px;
 
     display: flex;
     flex-direction: column;
 
-    /* Le contenu prend tout l'espace disponible */
     flex: 1;
+}
+
+
+/* =====================================================
+   IMAGES
+   ===================================================== */
+
+.product-card img {
+    width: 100%;
+    height: 260px;
+
+    object-fit: contain;
+
+    display: block;
+
+    background: #ffffff;
+
+    padding: 10px;
+
+    flex-shrink: 0;
+
+    margin-bottom: 10px;
 }
 
 
@@ -75,13 +87,13 @@
 .product-card .card-title {
     font-size: 18px;
     font-weight: 700;
+
     line-height: 1.35;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 
     /*
-       Réserve la même hauteur pour les titres.
-       Ainsi les prix commencent au même niveau.
+    Même hauteur pour les titres
     */
     min-height: 49px;
 }
@@ -95,7 +107,7 @@
     font-size: 19px;
     font-weight: 700;
 
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
     min-height: 26px;
 }
@@ -107,50 +119,53 @@
 
 .product-card .card-text {
     font-size: 14px;
-    line-height: 1.5;
+
+    line-height: 1.45;
 
     color: #555;
 
+    margin-bottom: 15px;
+
     /*
-       Réserve la même zone pour les descriptions.
+    Même hauteur pour les descriptions
     */
-    min-height: 63px;
+    min-height: 60px;
 }
 
 
 /* =====================================================
-   ADD TO CART BUTTON
+   BOUTON
    ===================================================== */
 
 .product-card .add-to-cart {
     width: 100%;
 
-    /*
-       IMPORTANT :
-       pousse tous les boutons vers le bas.
-    */
     margin-top: auto;
 
-    padding: 11px 15px;
+    padding: 11px 10px;
 
     font-weight: 600;
 
     border-radius: 8px;
 
-    /* Tous les boutons ont la même hauteur */
     min-height: 45px;
 }
 
 
 /* =====================================================
-   DESKTOP
+   ORDINATEUR
+   992px et plus
    ===================================================== */
 
 @media (min-width: 992px) {
 
-    .product-image {
-        height: 330px;
+    .product-card .card-body {
         padding: 18px;
+    }
+
+    .product-card img {
+        height: 300px;
+        padding: 15px;
     }
 
     .product-card .card-title {
@@ -158,7 +173,12 @@
         min-height: 52px;
     }
 
+    .product-card .price {
+        font-size: 19px;
+    }
+
     .product-card .card-text {
+        font-size: 14px;
         min-height: 63px;
     }
 
@@ -166,14 +186,20 @@
 
 
 /* =====================================================
-   TABLET
+   TABLETTE
+   577px → 991px
+   3 PRODUITS PAR LIGNE
    ===================================================== */
 
 @media (min-width: 577px) and (max-width: 991px) {
 
-    .product-image {
-        height: 280px;
-        padding: 15px;
+    .product-card .card-body {
+        padding: 14px;
+    }
+
+    .product-card img {
+        height: 230px;
+        padding: 10px;
     }
 
     .product-card .card-title {
@@ -181,56 +207,191 @@
         min-height: 46px;
     }
 
+    .product-card .price {
+        font-size: 17px;
+        min-height: 24px;
+    }
+
     .product-card .card-text {
+        font-size: 13px;
         min-height: 60px;
+    }
+
+    .product-card .add-to-cart {
+        font-size: 14px;
+        min-height: 43px;
     }
 
 }
 
 
 /* =====================================================
-   PHONE
+   TELEPHONE
+   0 → 576px
+   2 PRODUITS PAR LIGNE
    ===================================================== */
 
 @media (max-width: 576px) {
 
-    .product-image {
-        height: 210px;
-        padding: 10px;
+    /*
+    Cartes plus compactes
+    */
+    .product-card .card-body {
+        padding: 9px;
     }
 
+
+    /*
+    Images adaptées aux petites cartes
+    */
+    .product-card img {
+        width: 100%;
+        height: 150px;
+
+        object-fit: contain;
+
+        padding: 5px;
+
+        margin-bottom: 6px;
+    }
+
+
+    /*
+    Titres
+    */
+    .product-card .card-title {
+        font-size: 14px;
+
+        line-height: 1.3;
+
+        min-height: 37px;
+
+        margin-bottom: 5px;
+    }
+
+
+    /*
+    Prix
+    */
+    .product-card .price {
+        font-size: 15px;
+
+        min-height: 22px;
+
+        margin-bottom: 5px;
+    }
+
+
+    /*
+    Description
+    */
+    .product-card .card-text {
+        font-size: 11px;
+
+        line-height: 1.35;
+
+        min-height: 50px;
+
+        margin-bottom: 8px;
+    }
+
+
+    /*
+    Bouton
+    */
+    .product-card .add-to-cart {
+        width: 100%;
+
+        font-size: 11px;
+
+        padding: 8px 4px;
+
+        min-height: 38px;
+
+        margin-top: auto;
+
+        border-radius: 7px;
+    }
+
+}
+
+
+/* =====================================================
+   TRÈS PETITS TÉLÉPHONES
+   400px et moins
+   ===================================================== */
+
+@media (max-width: 400px) {
+
     .product-card .card-body {
-        padding: 12px;
+        padding: 7px;
+    }
+
+    .product-card img {
+        height: 125px;
     }
 
     .product-card .card-title {
-        font-size: 15px;
-
-        /* Même hauteur pour tous les titres */
-        min-height: 41px;
+        font-size: 13px;
+        min-height: 34px;
     }
 
     .product-card .price {
-        font-size: 16px;
-
-        min-height: 24px;
+        font-size: 14px;
     }
 
     .product-card .card-text {
-        font-size: 12px;
-
-        /* Même hauteur pour toutes les descriptions */
-        min-height: 54px;
+        font-size: 10px;
+        min-height: 46px;
     }
 
     .product-card .add-to-cart {
-        font-size: 12px;
-        padding: 9px 5px;
-
-        /* Même hauteur pour tous les boutons */
-        min-height: 40px;
-
-        margin-top: auto;
+        font-size: 10px;
+        min-height: 36px;
+        padding: 7px 3px;
     }
 
+}
+.product-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+@media (max-width: 991px) {
+    .product-card img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card .card-body {
+        padding: 7px;
+    }
+
+    .product-card img {
+        height: 120px;
+        padding: 3px;
+    }
+
+    .product-card .card-title {
+        font-size: 12px;
+        min-height: 32px;
+    }
+
+    .product-card .price {
+        font-size: 13px;
+    }
+
+    .product-card .card-text {
+        font-size: 10px;
+        min-height: 42px;
+    }
+
+    .product-card .add-to-cart {
+        font-size: 9px;
+        padding: 6px 2px;
+        min-height: 34px;
+    }
 }
