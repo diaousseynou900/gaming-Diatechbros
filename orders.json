@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1788714086328,
+    "customer": {
+      "name": "ousseynou dia",
+      "phone": "781942974",
+      "address": "almadies"
+    },
+    "products": [
+      {
+        "name": "PlayStation 5",
+        "price": 575000,
+        "image": "http://localhost:3000/i1/IMG_2521.jpeg"
+      },
+      {
+        "name": "NBA 2K26",
+        "price": 220000,
+        "image": "http://localhost:3000/i1/IMG_2527.jpeg"
+      },
+      {
+        "name": "Xbox Series S",
+        "price": 95000,
+        "image": "http://localhost:3000/i1/IMG_2531.jpeg"
+      },
+      {
+        "name": "Casque Gaming",
+        "price": 260000,
+        "image": "http://localhost:3000/im3/IMG_2544.jpeg"
+      },
+      {
+        "name": "JBL Boombox 3",
+        "price": 390000,
+        "image": "http://localhost:3000/im3/IMG_2551.jpeg"
+      }
+    ],
+    "total": 1540000,
+    "date": "2026-09-06T17:01:26.328Z"
+  },
+  {
+    "id": 1788714438990,
+    "customer": {
+      "name": "plenty",
+      "phone": "771234567",
+      "address": "dakar"
+    },
+    "products": [
+      {
+        "name": "Apple AirPods Max",
+        "price": 30000,
+        "image": "http://localhost:3000/im3/IMG_2554.jpeg"
+      },
+      {
+        "name": "Enceinte Moniteur",
+        "price": 390000,
+        "image": "http://localhost:3000/im4/IMG_2558.jpeg"
+      }
+    ],
+    "total": 420000,
+    "date": "2026-09-06T17:07:18.990Z"
+  },
+  {
+    "id": 1788715353449,
+    "customer": {
+      "name": "mere",
+      "phone": "773801822",
+      "address": "fadoa"
+    },
+    "products": [
+      {
+        "name": "PlayStation 5",
+        "price": 575000,
+        "image": "http://localhost:3000/i1/IMG_2521.jpeg"
+      }
+    ],
+    "total": 575000,
+    "date": "2026-09-06T17:22:33.449Z"
+  }
+]

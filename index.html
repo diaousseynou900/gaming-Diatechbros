@@ -8,6 +8,135 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+<!-- =========================
+     PANIER
+========================= -->
+<div class="cart-modal" id="cartModal">
+    <div class="cart-content">
+
+        <!-- Bouton fermer -->
+        <button class="cart-close" id="cartClose">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+        <h2>Mon panier</h2>
+
+        <!-- Produits du panier -->
+        <div id="cartItems">
+            <!-- Les produits seront ajoutés ici par JavaScript -->
+        </div>
+
+        <!-- =========================
+             INFORMATIONS DE LIVRAISON
+        ========================= -->
+        <div class="delivery-form">
+
+            <h3>
+                <i class="bi bi-truck"></i>
+                Informations de livraison
+            </h3>
+
+            <!-- Nom -->
+            <div class="form-group">
+                <label for="customerName">
+                    Nom complet
+                </label>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Votre nom complet"
+                    autocomplete="name"
+                >
+            </div>
+
+            <!-- Numéro -->
+            <div class="form-group">
+                <label for="customerPhone">
+                    Numéro de téléphone
+                </label>
+
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="Ex : 77 123 45 67"
+                    autocomplete="tel"
+                >
+            </div>
+
+            <!-- Adresse -->
+            <div class="form-group">
+                <label for="deliveryAddress">
+                    Adresse de livraison
+                </label>
+
+                <textarea
+                    id="deliveryAddress"
+                    rows="3"
+                    placeholder="Ex : Dakar, Almadies, près de..."
+                    autocomplete="street-address"
+                ></textarea>
+            </div>
+
+        </div>
+
+        <!-- Total -->
+        <div class="cart-bottom">
+            <strong>Total :</strong>
+            <span id="cartTotal">CFA 0</span>
+        </div>
+
+        <!-- Commander -->
+        <button class="checkout-btn" type="button">
+            <i class="bi bi-bag-check"></i>
+            Commander
+        </button>
+
+    </div>
+</div>
+
+
+
+
+<!-- =========================
+     MODAL DÉTAIL DU PRODUIT
+========================= -->
+<div class="product-modal" id="productModal">
+
+    <div class="product-modal-content">
+
+        <!-- Bouton fermer -->
+        <button class="product-modal-close" id="productModalClose">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+        <!-- Image -->
+        <div class="product-modal-image">
+            <img id="modalProductImage" src="" alt="">
+        </div>
+
+        <!-- Informations -->
+        <div class="product-modal-info">
+
+            <h2 id="modalProductName"></h2>
+
+            <p id="modalProductDescription"></p>
+
+            <div class="modal-product-price" id="modalProductPrice"></div>
+
+            <button
+                class="modal-add-to-cart"
+                id="modalAddToCart">
+                <i class="bi bi-bag-plus"></i>
+                Ajouter au panier
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
 <body>
     
 <!-- BARRE DE NAVIGATION -->
@@ -803,5 +932,8 @@
         </div>
     </div>
  </section>
+
+ <script src="script.js"></script>
+
 </body>
 </html>
