@@ -143,6 +143,7 @@
 <section class="text">
     <nav class="navbar">
 
+        <!-- GAUCHE : MENU + RECHERCHE -->
         <div class="navbar-left">
 
             <!-- Icône menu -->
@@ -150,27 +151,47 @@
                 <i class="bi bi-list"></i>
             </button>
 
-            <!-- Icône recherche -->
-            <button class="nav-icon" type="button" title="Recherche">
-                <i class="bi bi-search"></i>
-            </button>
+            <!-- Recherche -->
+            <div class="search-container">
+
+                <button class="nav-icon search-button" type="button" title="Recherche">
+                    <i class="bi bi-search"></i>
+                </button>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    class="search-input"
+                    placeholder="Rechercher un produit..."
+                    autocomplete="off"
+                >
+
+            </div>
 
         </div>
 
-        <!-- Logo au centre -->
+
+        <!-- LOGO AU CENTRE -->
         <a class="navbar-brand" href="#">
-            <img class="img1"
-                 src="logo/ChatGPT Image 2 sept. 2026, 11_59_29.png"
-                 alt="Logo">
+            <img
+                class="img1"
+                src="logo/ChatGPT Image 2 sept. 2026, 11_59_29.png"
+                alt="Logo"
+            >
         </a>
 
-        <!-- Panier à droite -->
+
+        <!-- PANIER TOUT À DROITE -->
         <button class="nav-icon cart-icon" type="button" title="Panier">
+
             <i class="bi bi-bag-fill"></i>
+
             <span class="cart-count">0</span>
+
         </button>
 
     </nav>
+</section>
 </section>
 
 <!-- partie image -->
@@ -934,6 +955,51 @@
  </section>
 
  <script src="script.js"></script>
+
+
+ <!-- =========================
+     FOOTER
+========================= -->
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <h3>DIA TECHBROS</h3>
+            <p>
+                Votre boutique de confiance pour vos produits
+                gaming et technologiques.
+            </p>
+        </div>
+
+        <div class="footer-contact">
+
+            <h4>Contactez-nous</h4>
+
+            <a href="tel:+221781942974" class="footer-contact-item">
+                <i class="bi bi-telephone-fill"></i>
+                <span>78 194 29 74</span>
+            </a>
+
+            <a href="https://wa.me/221781942974" class="footer-contact-item">
+                <i class="bi bi-whatsapp"></i>
+                <span>WhatsApp : 78 194 29 74</span>
+            </a>
+
+            <a href="mailto:codersdkr@gmail.com" class="footer-contact-item">
+                <i class="bi bi-envelope-fill"></i>
+                <span>codersdkr@gmail.com</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 DIA TECHBROS — Tous droits réservés.</p>
+    </div>
+
+</footer>
 
 </body>
 </html>

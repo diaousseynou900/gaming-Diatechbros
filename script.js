@@ -685,6 +685,121 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+  // =====================================================
+// RECHERCHE PRODUITS
+// =====================================================
+
+const searchButton = document.querySelector(".search-button");
+const searchInput = document.getElementById("searchInput");
+const navbar = document.querySelector(".navbar");
+const navbarBrand = document.querySelector(".navbar-brand");
+
+if (searchButton && searchInput) {
+
+    searchButton.addEventListener("click", function () {
+
+        // Sur téléphone
+        if (window.innerWidth <= 600) {
+
+            navbar.classList.toggle("search-open");
+
+            if (navbar.classList.contains("search-open")) {
+
+                // Faire disparaître le logo
+                if (navbarBrand) {
+                    navbarBrand.style.display = "none";
+                }
+
+                // Afficher la recherche
+                searchInput.classList.add("active");
+
+                searchInput.focus();
+
+            } else {
+
+                // Faire réapparaître le logo
+                if (navbarBrand) {
+                    navbarBrand.style.display = "";
+                }
+
+                // Fermer la recherche
+                searchInput.classList.remove("active");
+
+                searchInput.value = "";
+
+                filterProducts("");
+
+            }
+
+        } 
+        
+        // Sur ordinateur
+        else {
+
+            searchInput.classList.toggle("active");
+
+            if (searchInput.classList.contains("active")) {
+
+                searchInput.focus();
+
+            } else {
+
+                searchInput.value = "";
+
+                filterProducts("");
+
+            }
+
+        }
+
+    });
+
+
+    searchInput.addEventListener("input", function () {
+
+        filterProducts(this.value);
+
+    });
+
+}
+
+
+function filterProducts(searchText) {
+
+    const search =
+        searchText.trim().toLowerCase();
+
+    const productCards =
+        document.querySelectorAll(".product-card");
+
+    productCards.forEach(function (card) {
+
+        const title =
+            card.querySelector(".card-title");
+
+        if (!title) return;
+
+        const productName =
+            title.textContent.trim().toLowerCase();
+
+        const productContainer =
+            card.parentElement;
+
+        if (productName.includes(search)) {
+
+            productContainer.style.display = "";
+
+        } else {
+
+            productContainer.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
     // =====================================================
     // INITIALISATION
     // =====================================================
@@ -692,3 +807,4 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCart();
 
 });
+    
