@@ -74,5 +74,22 @@
     ],
     "total": 575000,
     "date": "2026-09-06T17:22:33.449Z"
+  },
+  {
+    "id": 1788759965754,
+    "customer": {
+      "name": "ousseynou",
+      "phone": "781942974",
+      "address": "yoff"
+    },
+    "products": [
+      {
+        "name": "Nintendo Switch 2",
+        "price": 780000,
+        "image": "file:///c%3A/Users/HP/gaming-Diatechbros/new/IMG_2547.jpeg"
+      }
+    ],
+    "total": 780000,
+    "date": "2026-09-07T05:46:05.754Z"
   }
 ]
