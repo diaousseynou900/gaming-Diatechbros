@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": 1788801084623,
+    "customer": {
+      "name": "Ousseynou Dia",
+      "phone": "781942974",
+      "address": "Yoff Virage côté brioche doree"
+    },
+    "products": [
+      {
+        "name": "NBA 2K26",
+        "price": 220000,
+        "image": "http://192.168.1.3:3000/i1/IMG_2527.jpeg"
+      },
+      {
+        "name": "EA Sports FC 25",
+        "price": 85000,
+        "image": "http://192.168.1.3:3000/i1/IMG_2529.jpeg"
+      },
+      {
+        "name": "PlayStation 5",
+        "price": 575000,
+        "image": "http://192.168.1.3:3000/i1/IMG_2521.jpeg"
+      }
+    ],
+    "total": 880000,
+    "date": "2026-09-07T17:11:24.624Z"
+  }
+]
