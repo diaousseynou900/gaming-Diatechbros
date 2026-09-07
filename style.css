@@ -1559,70 +1559,165 @@ section,
 }
 
 
-/* =====================================================
-   FOOTER — TÉLÉPHONE
-===================================================== */
+/* =========================================
+FOOTER — TÉLÉPHONE
+========================================= */
 
-@media (max-width: 600px) {
-
-    .site-footer {
-        margin-top: 40px;
-        padding-top: 35px;
-    }
-
-    .footer-container {
-        width: 88%;
-        flex-direction: column;
-        gap: 30px;
-        padding-bottom: 30px;
-    }
-
-    .footer-brand {
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .footer-brand h3 {
-        font-size: 22px;
-    }
-
-    .footer-brand p {
-        font-size: 14px;
-    }
-
-    .footer-contact {
-        width: 100%;
-    }
-
-    .footer-contact h4 {
-        text-align: center;
-        font-size: 18px;
-    }
-
-    .footer-contact-item {
-        justify-content: center;
-        font-size: 14px;
-    }
-
-    .footer-contact-item i {
-        font-size: 19px;
-    }
-
-    .footer-bottom {
-        padding: 15px 8px;
-    }
-
-    .footer-bottom p {
-        font-size: 12px;
-    }
-}
+@media (max-width: 650px) {
 
 .site-footer {
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 12px;
-    margin: 60px 20px 20px;
-    overflow: hidden;
+    margin-top: 50px;
 }
+
+/* CONTENU PRINCIPAL */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    padding: 45px 22px 30px;
+
+    gap: 32px;
+}
+
+
+/* LOGO */
+
+.footer-logo {
+    font-size: 22px;
+    text-align: left;
+}
+
+.footer-slogan {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.footer-description,
+.footer-about {
+    max-width: 100%;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* TITRES */
+
+.footer-column h4 {
+    font-size: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+/* SERVICES */
+
+.footer-links li {
+    margin-bottom: 13px;
+
+    font-size: 13px;
+}
+
+.footer-links li i {
+    font-size: 15px;
+}
+
+
+/* CONTACT */
+
+.footer-contact-item {
+    gap: 11px;
+
+    margin-bottom: 14px;
+}
+
+.contact-icon {
+    width: 36px;
+    height: 36px;
+
+    flex: 0 0 36px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+.footer-contact-item > span:last-child {
+    font-size: 13px;
+}
+
+.footer-contact-item small {
+    font-size: 9px;
+    margin-bottom: 3px;
+}
+
+
+/* BOUTON WHATSAPP */
+
+.footer-whatsapp-btn {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 12px;
+
+    font-size: 12px;
+}
+
+
+/* BANDEAU */
+
+.footer-highlight {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0;
+
+    margin: 0;
+
+    padding: 20px 22px;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-highlight div {
+    padding: 9px 0;
+
+    font-size: 11px;
+
+    gap: 8px;
+}
+
+.footer-highlight i {
+    font-size: 15px;
+}
+
+
+/* BAS */
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+
+    padding: 20px 15px;
+
+    text-align: center;
+
+    font-size: 10.5px;
+}
+
+.footer-bottom-text {
+    font-size: 10px;
+}
+
+}
+
 
 /* =====================================================
    RECHERCHE MOBILE
@@ -1641,5 +1736,382 @@ section,
     .search-input {
         display: none;
     }
+}
+
+/* =========================================
+FOOTER DIA TECHBROS — ALIGNEMENT
+========================================= */
+
+.site-footer {
+background: #071a33;
+color: #fff;
+margin-top: 80px;
+position: relative;
+overflow: hidden;
+}
+
+.site-footer::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 4px;
+background: #0d6efd;
+}
+
+/* =========================================
+CONTENEUR PRINCIPAL
+========================================= */
+
+.footer-container {
+max-width: 1250px;
+margin: auto;
+padding: 65px 40px 55px;
+
+display: grid;
+grid-template-columns: 1.25fr 1.4fr 0.9fr 1.15fr;
+gap: 55px;
+
+align-items: start;
+
+}
+
+/* =========================================
+COLONNES
+========================================= */
+
+.footer-column {
+min-width: 0;
+}
+
+.footer-column h4 {
+margin: 0 0 22px;
+font-size: 16px;
+font-weight: 700;
+line-height: 1.3;
+color: #fff;
+}
+
+/* =========================================
+LOGO
+========================================= */
+
+.footer-logo {
+font-size: 25px;
+font-weight: 800;
+letter-spacing: 1px;
+line-height: 1.2;
+margin-bottom: 10px;
+}
+
+.footer-logo span {
+color: #0d6efd;
+}
+
+/* =========================================
+TEXTES
+========================================= */
+
+.footer-slogan {
+margin: 0 0 16px;
+color: #4da3ff;
+font-size: 14px;
+font-weight: 600;
+line-height: 1.5;
+}
+
+.footer-description,
+.footer-about {
+margin: 0;
+color: #aebdd0;
+font-size: 13.5px;
+line-height: 1.75;
+max-width: 390px;
+}
+
+.footer-about + .footer-about {
+margin-top: 12px;
+}
+
+/* =========================================
+SERVICES
+========================================= */
+
+.footer-links {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.footer-links li {
+display: flex;
+align-items: center;
+
+gap: 12px;
+
+margin-bottom: 16px;
+
+color: #b8c7d9;
+font-size: 13.5px;
+line-height: 1.4;
+
+transition: 0.25s;
+
+}
+
+.footer-links li i {
+width: 20px;
+text-align: center;
+
+color: #0d6efd;
+font-size: 16px;
+
+}
+
+.footer-links li:hover {
+color: #fff;
+transform: translateX(4px);
+}
+
+/* =========================================
+CONTACT
+========================================= */
+
+.footer-contact-item {
+display: flex;
+align-items: center;
+
+gap: 12px;
+
+margin-bottom: 17px;
+
+color: #fff;
+text-decoration: none;
+
+line-height: 1.3;
+
+transition: 0.25s;
+
+}
+
+.footer-contact-item:hover {
+color: #fff;
+transform: translateX(4px);
+}
+
+/* ICÔNES */
+
+.contact-icon {
+flex: 0 0 40px;
+
+width: 40px;
+height: 40px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+border-radius: 9px;
+
+background: rgba(13, 110, 253, 0.15);
+color: #4da3ff;
+
+font-size: 15px;
+
+}
+
+.contact-icon.whatsapp {
+background: rgba(37, 211, 102, 0.12);
+color: #25d366;
+}
+
+/* TEXTE CONTACT */
+
+.footer-contact-item > span:last-child {
+display: flex;
+flex-direction: column;
+
+min-width: 0;
+
+font-size: 13.5px;
+line-height: 1.4;
+
+}
+
+.footer-contact-item small {
+margin-bottom: 3px;
+
+color: #71859d;
+font-size: 10px;
+line-height: 1;
+
+}
+
+/* =========================================
+BOUTON WHATSAPP
+========================================= */
+
+.footer-whatsapp-btn {
+display: flex;
+align-items: center;
+justify-content: center;
+
+width: 100%;
+max-width: 230px;
+
+gap: 9px;
+
+padding: 11px 15px;
+
+margin-top: 5px;
+
+border-radius: 8px;
+
+background: #0d6efd;
+color: #fff;
+
+text-decoration: none;
+
+font-size: 12.5px;
+font-weight: 600;
+
+transition: 0.25s;
+
+}
+
+.footer-whatsapp-btn:hover {
+background: #0b5ed7;
+color: #fff;
+transform: translateY(-2px);
+}
+
+/* =========================================
+BANDEAU
+========================================= */
+
+.footer-highlight {
+max-width: 1170px;
+margin: 0 auto;
+
+padding: 21px 30px;
+
+border-top: 1px solid rgba(255,255,255,0.08);
+border-bottom: 1px solid rgba(255,255,255,0.08);
+
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+
+gap: 25px;
+
+}
+
+.footer-highlight div {
+display: flex;
+align-items: center;
+
+gap: 10px;
+
+color: #aebdd0;
+
+font-size: 12.5px;
+
+}
+
+.footer-highlight i {
+color: #0d6efd;
+font-size: 17px;
+}
+
+/* =========================================
+BAS DU FOOTER
+========================================= */
+
+.footer-bottom {
+max-width: 1250px;
+margin: auto;
+
+padding: 21px 40px;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+color: #71859d;
+
+font-size: 11.5px;
+
+}
+
+.footer-bottom p {
+margin: 0;
+}
+
+.footer-bottom strong {
+color: #fff;
+}
+
+.footer-bottom-text {
+color: #526a84;
+}
+
+/* =========================================
+TABLETTE
+========================================= */
+
+@media (max-width: 1000px) {
+
+.footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+}
+
+.footer-highlight {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+/* =========================================
+MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+.footer-container {
+    padding: 35px 20px 25px;
+    gap: 27px;
+}
+
+.footer-highlight {
+    padding: 16px 20px;
+}
+
+.footer-bottom {
+    padding: 16px 15px;
+}
+
+.footer-column h4 {
+    margin-bottom: 12px;
+}
+
+.footer-description,
+.footer-about {
+    font-size: 12.5px;
+    line-height: 1.6;
+}
+
+.footer-logo {
+    font-size: 20px;
+}
+
+.footer-slogan {
+    font-size: 12px;
+}
+
+.footer-whatsapp-btn {
+    padding: 10px;
+}
+
 }
 
