@@ -589,23 +589,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 try {
 
-                    const response =
+                   const response =
     await fetch(
-        "http://localhost:3000/api/orders",
-                            {
+        "/api/orders",
+        {
+            method: "POST",
 
-                                method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
 
-                                headers: {
-                                    "Content-Type":
-                                        "application/json"
-                                },
-
-                                body:
-                                    JSON.stringify(order)
-
-                            }
-                        );
+            body:
+                JSON.stringify(order)
+        }
+    );
 
 
                     const data =

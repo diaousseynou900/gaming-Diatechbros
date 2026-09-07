@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
 
-            const response = await fetch(
-                "http://localhost:3000/api/orders"
-            );
+    const response = await fetch(
+    "/api/orders"
+    );
 
             if (!response.ok) {
                 throw new Error(
@@ -341,11 +341,11 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
 
             const response = await fetch(
-                `http://localhost:3000/api/orders/${id}`,
-                {
-                    method: "DELETE"
-                }
-            );
+    `/api/orders/${id}`,
+    {
+        method: "DELETE"
+    }
+);
 
 
             const result = await response.json();
