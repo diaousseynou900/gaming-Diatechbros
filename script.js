@@ -805,3 +805,20 @@ function filterProducts(searchText) {
 
 });
     
+// =========================
+// MENU ☰
+// =========================
+
+const menuButton = document.querySelector(".menu-button");
+const menuDropdown = document.querySelector("#menuDropdown");
+
+menuButton.addEventListener("click", function () {
+    menuDropdown.classList.toggle("show");
+});
+
+// Fermer le menu après avoir cliqué sur Contact
+const contactLink = document.querySelector('#menuDropdown a');
+
+contactLink.addEventListener("click", function () {
+    menuDropdown.classList.remove("show");
+});

@@ -2115,3 +2115,33 @@ MOBILE
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: white;
+    width: 120px;
+    padding: 6px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    z-index: 9999;
+}
+
+.menu-dropdown.show {
+    display: block;
+}
+
+.menu-dropdown a {
+    display: block;
+    text-decoration: none;
+    color: #0066ff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 8px;
+    text-align: center;
+}
