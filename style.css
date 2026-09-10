@@ -2193,3 +2193,65 @@ html {
 body {
     padding-top: 88px !important;
 }
+
+
+/* PRODUCT POPUP — COVER EVERYTHING */
+.product-modal {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+
+    z-index: 999999 !important;
+
+    padding: 20px !important;
+    overflow-y: auto !important;
+}
+
+.product-modal-content {
+    width: 90% !important;
+    max-width: 900px !important;
+    max-height: 90vh !important;
+    margin: 5vh auto !important;
+}
+
+/* =========================================
+   PANIER — PETIT PANNEAU À DROITE
+   ========================================= */
+
+.cart-modal {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: auto !important;
+    width: 380px !important;
+    height: 100vh !important;
+
+    z-index: 1000000 !important;
+
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+.cart-content {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 100vh !important;
+
+    margin: 0 !important;
+    padding: 25px !important;
+}
+
+@media (max-width: 600px) {
+    .cart-modal {
+        width: 90% !important;
+        max-width: 350px !important;
+    }
+
+    .cart-content {
+        padding: 18px !important;
+    }
+}
+

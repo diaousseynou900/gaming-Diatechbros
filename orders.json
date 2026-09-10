@@ -1,1 +1,46 @@
-[]
+[
+  {
+    "id": 1789065910313,
+    "customer": {
+      "name": "Ousseynou Dia",
+      "phone": "555",
+      "address": "Dakar"
+    },
+    "products": [
+      {
+        "name": "PlayStation 5",
+        "price": 575000,
+        "image": "http://192.168.1.7:3000/i1/IMG_2521.jpeg"
+      },
+      {
+        "name": "EA Sports FC 25",
+        "price": 85000,
+        "image": "http://192.168.1.7:3000/i1/IMG_2529.jpeg"
+      }
+    ],
+    "total": 660000,
+    "date": "2026-09-10T18:45:10.313Z"
+  },
+  {
+    "id": 1789066656168,
+    "customer": {
+      "name": "Ousseynou Dia",
+      "phone": "772258800",
+      "address": "Dkr"
+    },
+    "products": [
+      {
+        "name": "Support Pliable Ordinateur ",
+        "price": 9000,
+        "image": "http://192.168.1.7:3000/page2img1/IMG_2699.jpeg"
+      },
+      {
+        "name": "Adaptateur USB-C 8-en-1 ",
+        "price": 12000,
+        "image": "http://192.168.1.7:3000/po/IMG_2722.jpeg"
+      }
+    ],
+    "total": 21000,
+    "date": "2026-09-10T18:57:36.168Z"
+  }
+]
