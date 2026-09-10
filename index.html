@@ -1446,6 +1446,63 @@ Un accessoire indispensable pour les utilisateurs d’iPhone.">
 
 </footer>
 
+<script>
+(function () {
+
+    let visitorId = localStorage.getItem("visitorId");
+
+    if (!visitorId) {
+
+        visitorId =
+            Date.now() + "-" +
+            Math.random().toString(36).substring(2);
+
+        localStorage.setItem(
+            "visitorId",
+            visitorId
+        );
+
+    }
+
+    fetch("/api/visitors", {
+
+        method: "POST",
+
+        headers: {
+            "Content-Type": "application/json"
+        },
+
+        body: JSON.stringify({
+            visitorId: visitorId
+        })
+
+    })
+
+    .then(response => response.json())
+
+    .then(data => {
+
+        if (data.success) {
+
+            document.getElementById(
+                "visitorCount"
+            ).textContent = data.count;
+
+        }
+
+    })
+
+    .catch(error => {
+
+        console.error(
+            "Erreur compteur :",
+            error
+        );
+
+    });
+
+})();
+</script>
 
 </body>
 </html>
