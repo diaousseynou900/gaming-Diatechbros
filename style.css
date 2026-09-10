@@ -2160,3 +2160,14 @@ footer small {
     border-color: #0d6efd !important;
     color: white !important;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+
