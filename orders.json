@@ -1,211 +1,29 @@
 [
   {
-    "id": 1789030389405,
+    "id": 1789047169018,
     "customer": {
-      "name": "Ousseynou Dia",
-      "phone": "772508844",
-      "address": "Yoff"
-    },
-    "products": [
-      {
-        "name": " USB-C 8-en-1 ",
-        "price": 650000,
-        "image": "http://192.168.1.7:3000/po/IMG_2722.jpeg"
-      },
-      {
-        "name": "Chargeur HP USB C",
-        "price": 780000,
-        "image": "http://192.168.1.7:3000/page2img1/IMG_2702.jpeg"
-      },
-      {
-        "name": "PlayStation 5",
-        "price": 575000,
-        "image": "http://192.168.1.7:3000/i1/IMG_2521.jpeg"
-      }
-    ],
-    "total": 2005000,
-    "date": "2026-09-10T08:53:09.405Z"
-  },
-  {
-    "id": 1789031081660,
-    "customer": {
-      "name": "ass",
-      "phone": "771847063",
+      "name": "ousseynou dia",
+      "phone": "778866554",
       "address": "yoff"
     },
     "products": [
       {
-        "name": "PlayStation 5",
-        "price": 575000,
-        "image": "http://localhost:3000/i1/IMG_2521.jpeg"
-      },
-      {
-        "name": "Casque gaming Playstation",
-        "price": 780000,
-        "image": "http://localhost:3000/new/IMG_2543.jpeg"
-      },
-      {
         "name": "Support Pliable Ordinateur ",
-        "price": 575000,
+        "price": 9000,
         "image": "http://localhost:3000/page2img1/IMG_2699.jpeg"
-      },
-      {
-        "name": "Chargeur HP USB C",
-        "price": 780000,
-        "image": "http://localhost:3000/page2img1/IMG_2702.jpeg"
-      },
-      {
-        "name": "Perche selfie 3-en-1 trépied",
-        "price": 220000,
-        "image": "http://localhost:3000/page2img1/ChatGPT%20Image%209%20sept.%202026,%2011_38_52.png"
-      },
-      {
-        "name": "Support Pliable Ordinateur ",
-        "price": 575000,
-        "image": "http://localhost:3000/page2img1/IMG_2699.jpeg"
-      },
-      {
-        "name": "PlayStation 5",
-        "price": 575000,
-        "image": "http://localhost:3000/i1/IMG_2521.jpeg"
-      }
-    ],
-    "total": 4080000,
-    "date": "2026-09-10T09:04:41.660Z"
-  },
-  {
-    "id": 1789031112092,
-    "customer": {
-      "name": "mm",
-      "phone": "0",
-      "address": "i"
-    },
-    "products": [
-      {
-        "name": "MacBook Pro 14,2″ M3 2023",
-        "price": 25000,
-        "image": "http://localhost:3000/zip/Apple%202023%20MacBook%20Pro%20Laptop%20M3%20chip%20with%208%E2%80%91core%20CPU,%2010%E2%80%91core%20GPU_%20Built%20for%20Apple%20Intelligence,%2014_2-inch%20Liquid%20Retina%20XDR%20Display,%208GB%20Unified%20Memory,%201TB%20SSD%20Storage;%20Silver,%20English.jpg"
-      }
-    ],
-    "total": 25000,
-    "date": "2026-09-10T09:05:12.092Z"
-  },
-  {
-    "id": 1789031145621,
-    "customer": {
-      "name": "Ousseynou Dia",
-      "phone": "771234566",
-      "address": "Yoff"
-    },
-    "products": [
-      {
-        "name": "PlayStation 4 slim",
-        "price": 650000,
-        "image": "http://192.168.1.7:3000/i1/IMG_2520.jpeg"
-      },
-      {
-        "name": " USB-C 8-en-1 ",
-        "price": 650000,
-        "image": "http://192.168.1.7:3000/po/IMG_2722.jpeg"
-      },
-      {
-        "name": "Apple AirTag",
-        "price": 260000,
-        "image": "http://192.168.1.7:3000/page2img1/ChatGPT%20Image%209%20sept.%202026,%2011_48_31.png"
-      },
-      {
-        "name": " USB-C 8-en-1 ",
-        "price": 650000,
-        "image": "http://192.168.1.7:3000/po/IMG_2722.jpeg"
-      }
-    ],
-    "total": 2210000,
-    "date": "2026-09-10T09:05:45.621Z"
-  },
-  {
-    "id": 1789031378043,
-    "customer": {
-      "name": "ousseynou dia",
-      "phone": "778889900",
-      "address": "dkr"
-    },
-    "products": [
-      {
-        "name": "MacBook Pro 14,2″ M3 2023",
-        "price": 25000,
-        "image": "http://localhost:3000/zip/Apple%202023%20MacBook%20Pro%20Laptop%20M3%20chip%20with%208%E2%80%91core%20CPU,%2010%E2%80%91core%20GPU_%20Built%20for%20Apple%20Intelligence,%2014_2-inch%20Liquid%20Retina%20XDR%20Display,%208GB%20Unified%20Memory,%201TB%20SSD%20Storage;%20Silver,%20English.jpg"
-      },
-      {
-        "name": "Chargeur iPhone",
-        "price": 280000,
-        "image": "http://localhost:3000/img6/IMG_2580.jpeg"
-      },
-      {
-        "name": " USB-C 8-en-1 ",
-        "price": 650000,
-        "image": "http://localhost:3000/po/IMG_2722.jpeg"
-      },
-      {
-        "name": "Apple AirTag",
-        "price": 260000,
-        "image": "http://localhost:3000/page2img1/ChatGPT%20Image%209%20sept.%202026,%2011_48_31.png"
-      }
-    ],
-    "total": 1215000,
-    "date": "2026-09-10T09:09:38.043Z"
-  },
-  {
-    "id": 1789031422120,
-    "customer": {
-      "name": "Momo",
-      "phone": "775542211",
-      "address": "Biagui"
-    },
-    "products": [
-      {
-        "name": "Huawei Free Clip 2",
-        "price": 850000,
-        "image": "http://192.168.1.7:3000/po/HUAWEI%20FreeClip%202%20Open-Ear%20Bluetooth%20Earbuds%20-%20Advanced%20Comfort%20&%20Audio,%20Hands-Free%20Calls,%20Black%20Color%20-%20TWS%20Earphones%20for%20All-Day%20Wear.jpg"
-      },
-      {
-        "name": " USB-C 8-en-1 ",
-        "price": 650000,
-        "image": "http://192.168.1.7:3000/po/IMG_2722.jpeg"
-      },
-      {
-        "name": "Support Pliable Ordinateur ",
-        "price": 575000,
-        "image": "http://192.168.1.7:3000/page2img1/IMG_2699.jpeg"
-      }
-    ],
-    "total": 2075000,
-    "date": "2026-09-10T09:10:22.120Z"
-  },
-  {
-    "id": 1789042875744,
-    "customer": {
-      "name": "p",
-      "phone": "p",
-      "address": "p"
-    },
-    "products": [
-      {
-        "name": "Manette PS5",
-        "price": 850000,
-        "image": "http://localhost:3000/i1/IMG_2522.jpeg"
-      },
-      {
-        "name": "PlayStation 5",
-        "price": 575000,
-        "image": "http://localhost:3000/i1/IMG_2521.jpeg"
       },
       {
         "name": "Adaptateur USB-C 8-en-1 ",
-        "price": 650000,
+        "price": 12000,
         "image": "http://localhost:3000/po/IMG_2722.jpeg"
+      },
+      {
+        "name": "Huawei Free Clip 2",
+        "price": 7000,
+        "image": "http://localhost:3000/po/HUAWEI%20FreeClip%202%20Open-Ear%20Bluetooth%20Earbuds%20-%20Advanced%20Comfort%20&%20Audio,%20Hands-Free%20Calls,%20Black%20Color%20-%20TWS%20Earphones%20for%20All-Day%20Wear.jpg"
       }
     ],
-    "total": 2075000,
-    "date": "2026-09-10T12:21:15.744Z"
+    "total": 28000,
+    "date": "2026-09-10T13:32:49.018Z"
   }
 ]
