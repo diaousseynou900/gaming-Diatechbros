@@ -1227,3 +1227,4 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCart();
 
 });
+

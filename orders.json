@@ -1,27 +1,5 @@
 [
   {
-    "id": 1789065910313,
-    "customer": {
-      "name": "Ousseynou Dia",
-      "phone": "555",
-      "address": "Dakar"
-    },
-    "products": [
-      {
-        "name": "PlayStation 5",
-        "price": 575000,
-        "image": "http://192.168.1.7:3000/i1/IMG_2521.jpeg"
-      },
-      {
-        "name": "EA Sports FC 25",
-        "price": 85000,
-        "image": "http://192.168.1.7:3000/i1/IMG_2529.jpeg"
-      }
-    ],
-    "total": 660000,
-    "date": "2026-09-10T18:45:10.313Z"
-  },
-  {
     "id": 1789066656168,
     "customer": {
       "name": "Ousseynou Dia",
@@ -42,62 +20,5 @@
     ],
     "total": 21000,
     "date": "2026-09-10T18:57:36.168Z"
-  },
-  {
-    "id": 1789066900456,
-    "customer": {
-      "name": "Ass ndoa",
-      "phone": "702350001",
-      "address": "Mbour"
-    },
-    "products": [
-      {
-        "name": "MacBook Pro 14,2″ M3 2023",
-        "price": 25000,
-        "image": "http://192.168.1.7:3000/zip/Apple%202023%20MacBook%20Pro%20Laptop%20M3%20chip%20with%208%E2%80%91core%20CPU,%2010%E2%80%91core%20GPU_%20Built%20for%20Apple%20Intelligence,%2014_2-inch%20Liquid%20Retina%20XDR%20Display,%208GB%20Unified%20Memory,%201TB%20SSD%20Storage;%20Silver,%20English.jpg"
-      },
-      {
-        "name": "Adaptateur USB-C 8-en-1 ",
-        "price": 12000,
-        "image": "http://192.168.1.7:3000/po/IMG_2722.jpeg"
-      },
-      {
-        "name": "Support Pliable Ordinateur ",
-        "price": 9000,
-        "image": "http://192.168.1.7:3000/page2img1/IMG_2699.jpeg"
-      },
-      {
-        "name": "Huawei FreeClip 2",
-        "price": 7000,
-        "image": "http://192.168.1.7:3000/po/HUAWEI%20FreeClip%202%20Open-Ear%20Bluetooth%20Earbuds%20-%20Advanced%20Comfort%20&%20Audio,%20Hands-Free%20Calls,%20Black%20Color%20-%20TWS%20Earphones%20for%20All-Day%20Wear.jpg"
-      },
-      {
-        "name": "Chargeur HP USB C",
-        "price": 780000,
-        "image": "http://192.168.1.7:3000/page2img1/IMG_2702.jpeg"
-      },
-      {
-        "name": "Support téléphone pour voiture",
-        "price": 165000,
-        "image": "http://192.168.1.7:3000/page2img1/page2img2/IMG_2689.jpeg"
-      },
-      {
-        "name": "Spider-Man 2",
-        "price": 280000,
-        "image": "http://192.168.1.7:3000/i1/IMG_2525.jpeg"
-      },
-      {
-        "name": "Gta 5",
-        "price": 210000,
-        "image": "http://192.168.1.7:3000/i1/IMG_2526.jpeg"
-      },
-      {
-        "name": "EA Sports FC 25",
-        "price": 85000,
-        "image": "http://192.168.1.7:3000/i1/IMG_2529.jpeg"
-      }
-    ],
-    "total": 1573000,
-    "date": "2026-09-10T19:01:40.456Z"
   }
 ]
