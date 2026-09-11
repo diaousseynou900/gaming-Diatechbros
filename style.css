@@ -2301,6 +2301,7 @@ body {
 
 .monpanier{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #4da3ff;
 }
 .price{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -2309,4 +2310,5 @@ body {
 .card-title{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
