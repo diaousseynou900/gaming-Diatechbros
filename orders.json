@@ -1,24 +1,44 @@
 [
   {
-    "id": 1789066656168,
+    "id": 1789211153803,
     "customer": {
-      "name": "Ousseynou Dia",
-      "phone": "772258800",
-      "address": "Dkr"
+      "name": "Ibou diack",
+      "phone": "772235544",
+      "address": "Grand yoff"
     },
     "products": [
       {
+        "name": "Chargeur Macbook Pro USB C",
+        "price": 260000,
+        "image": "http://192.168.1.16:3000/zip/Compatible%20avec%20Le%20Chargeur%20Mac%20Book%20Pro%20USB%20C%2061W%2011&13%20Pouces%202016%202017%202018%202019%20et%20Les%20ta___.jpg"
+      },
+      {
+        "name": "Apple AirTag",
+        "price": 260000,
+        "image": "http://192.168.1.16:3000/page2img1/ChatGPT%20Image%209%20sept.%202026,%2011_48_31.png"
+      },
+      {
+        "name": "Cable Macbook Magnetic USB C",
+        "price": 400000,
+        "image": "http://192.168.1.16:3000/page2img1/page2img2/IMG_2697.jpeg"
+      },
+      {
         "name": "Support Pliable Ordinateur ",
         "price": 9000,
-        "image": "http://192.168.1.7:3000/page2img1/IMG_2699.jpeg"
+        "image": "http://192.168.1.16:3000/page2img1/IMG_2699.jpeg"
+      },
+      {
+        "name": "Huawei FreeClip 2",
+        "price": 7000,
+        "image": "http://192.168.1.16:3000/po/HUAWEI%20FreeClip%202%20Open-Ear%20Bluetooth%20Earbuds%20-%20Advanced%20Comfort%20&%20Audio,%20Hands-Free%20Calls,%20Black%20Color%20-%20TWS%20Earphones%20for%20All-Day%20Wear.jpg"
       },
       {
         "name": "Adaptateur USB-C 8-en-1 ",
         "price": 12000,
-        "image": "http://192.168.1.7:3000/po/IMG_2722.jpeg"
+        "image": "http://192.168.1.16:3000/po/IMG_2722.jpeg"
       }
     ],
-    "total": 21000,
-    "date": "2026-09-10T18:57:36.168Z"
+    "total": 948000,
+    "date": "2026-09-12T11:05:53.803Z"
   }
 ]
