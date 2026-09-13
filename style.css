@@ -2362,3 +2362,172 @@ body {
         padding: 5px 2px;
     }
 }
+
+/* WhatsApp button - bottom right */ .whatsapp-float { position: fixed; right: 20px; bottom: 20px; width: 58px; height: 58px; display: flex; align-items: center; justify-content: center; background: #25D366; color: white; border-radius: 50%; text-decoration: none; font-size: 30px; z-index: 9999; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); transition: transform 0.2s ease, box-shadow 0.2s ease; } .whatsapp-float:hover { transform: scale(1.08); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); color: white; } /* Smaller on phones */ @media (max-width: 576px) { .whatsapp-float { width: 50px; height: 50px; right: 15px; bottom: 15px; font-size: 26px; } }
+
+
+/* ================================
+   STYLISH WHATSAPP FLOATING BUTTON
+================================ */
+
+.whatsapp-float {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(145deg, #2ee66b, #19b957);
+    color: #fff;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    font-size: 31px;
+
+    z-index: 9999;
+
+    /* Premium shadow + glow */
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.20),
+        0 0 0 5px rgba(37, 211, 102, 0.12),
+        0 0 22px rgba(37, 211, 102, 0.35);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* WhatsApp icon */
+.whatsapp-float i {
+    line-height: 1;
+    transition: transform 0.25s ease;
+}
+
+/* Hover */
+.whatsapp-float:hover {
+    transform: translateY(-4px) scale(1.08);
+
+    color: #fff;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.25),
+        0 0 0 7px rgba(37, 211, 102, 0.12),
+        0 0 30px rgba(37, 211, 102, 0.50);
+}
+
+.whatsapp-float:hover i {
+    transform: rotate(-8deg) scale(1.08);
+}
+
+/* Subtle pulse */
+.whatsapp-float::before {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    border: 2px solid rgba(37, 211, 102, 0.45);
+
+    animation: whatsappPulse 2.2s infinite;
+
+    pointer-events: none;
+}
+
+@keyframes whatsappPulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    70% {
+        transform: scale(1.35);
+        opacity
+
+       
+@media (max-width: 576px) {
+    .whatsapp-float {
+        width: 44px;
+        height: 44px;
+        right: 12px;
+        bottom: 12px;
+        font-size: 23px;
+
+        box-shadow:
+            0 5px 12px rgba(0, 0, 0, 0.20),
+            0 0 0 3px rgba(37, 211, 102, 0.10),
+            0 0 15px rgba(37, 211, 102, 0.25);
+    }
+
+    .whatsapp-float::before {
+        animation: whatsappPulse 2.5s infinite;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .whatsapp-float {
+        width: 38px;
+        height: 38px;
+        right: 10px;
+        bottom: 10px;
+        font-size: 20px;
+    }
+}
+
+
+        align-items: flex-end;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    /* Cart itself touches the bottom */
+    .cart-content {
+        width: 100%;
+        max-width: 100%;
+        height: 88vh;
+        max-height: 88vh;
+
+        margin: 0;
+        border-radius: 22px 22px 0 0;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        padding: 15px 12px 20px;
+        box-sizing: border-box;
+    }
+
+    /* Keep the top of the cart clean */
+    .monpanier {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+
+    /* Delivery section */
+    .delivery-section {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .checkout-btn {
+        position: sticky;
+        bottom: 10px;
+        z-index: 999;
+    }
+}
+@media (max-width: 576px) {
+    .checkout-btn {
+        margin-bottom: 60px !important;
+    }
+}
