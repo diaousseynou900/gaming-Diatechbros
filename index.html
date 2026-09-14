@@ -2079,6 +2079,18 @@ Avec leur son riche et puissant, leur excellente autonomie et leur résistance I
     });
 
 })();
+
+
+document.getElementById("searchInput").addEventListener("input", function () {
+    const products = document.querySelector(".row.g-4");
+
+    if (products) {
+        products.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
+});
 </script>
 
 
