@@ -1259,32 +1259,3 @@ categoryButtons.forEach(button => {
     });
 });
 
-document.querySelectorAll(".category-filter").forEach(button => {
-
-    button.addEventListener("click", function(e) {
-        e.preventDefault();
-
-        const category = this.dataset.category;
-
-        document.querySelectorAll(".product-card").forEach(card => {
-
-            if (category === "all" || card.dataset.category === category) {
-                card.closest(".col-4, .col-md-4, .col-6").style.display = "";
-            } else {
-                card.closest(".col-4, .col-md-4, .col-6").style.display = "none";
-            }
-
-        });
-
-        // Fermer le menu
-        const menuDropdown = document.getElementById("menuDropdown");
-        menuDropdown.classList.remove("show");
-
-        // Remonter vers les produits
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    });
-
-});
