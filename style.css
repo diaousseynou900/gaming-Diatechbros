@@ -2733,3 +2733,55 @@ body {
 
 
 
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 25px auto 35px;
+    padding: 0 15px;
+}
+
+.category-btn {
+    border: none;
+    background: #f1f3f5;
+    color: #222;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.category-btn:hover {
+    transform: translateY(-2px);
+}
+
+.category-btn.active {
+    background: #4da3ff;
+    color: white;
+    box-shadow: 0 5px 15px rgba(77, 163, 255, 0.25);
+}
+
+@media (max-width: 600px) {
+    .categories {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding: 5px 12px 12px;
+        scrollbar-width: none;
+    }
+
+    .categories::-webkit-scrollbar {
+        display: none;
+    }
+
+    .category-btn {
+        flex-shrink: 0;
+        padding: 9px 16px;
+        font-size: 13px;
+    }
+}
+

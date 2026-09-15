@@ -1228,3 +1228,63 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+
+const categoryButtons = document.querySelectorAll(".category-btn");
+const productCards = document.querySelectorAll(".product-card");
+
+categoryButtons.forEach(button => {
+    button.addEventListener("click", () => {
+
+        categoryButtons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        const category = button.dataset.category;
+
+        productCards.forEach(card => {
+            if (category === "all" || card.dataset.category === category) {
+                card.style.display = "";
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+        window.scrollTo({
+            top: document.querySelector(".categories").offsetTop - 100,
+            behavior: "smooth"
+        });
+    });
+});
+
+document.querySelectorAll(".category-filter").forEach(button => {
+
+    button.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        const category = this.dataset.category;
+
+        document.querySelectorAll(".product-card").forEach(card => {
+
+            if (category === "all" || card.dataset.category === category) {
+                card.closest(".col-4, .col-md-4, .col-6").style.display = "";
+            } else {
+                card.closest(".col-4, .col-md-4, .col-6").style.display = "none";
+            }
+
+        });
+
+        // Fermer le menu
+        const menuDropdown = document.getElementById("menuDropdown");
+        menuDropdown.classList.remove("show");
+
+        // Remonter vers les produits
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+});
