@@ -849,6 +849,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
 
 
+
+                    
+
+
                     // -------------------------------------
                     // SUCCÈS
                     // -------------------------------------
@@ -1259,3 +1263,53 @@ categoryButtons.forEach(button => {
     });
 });
 
+
+
+
+
+
+
+const https = require("https");
+
+// ================================
+// TELEGRAM
+// ================================
+const TELEGRAM_BOT_TOKEN = "COLLE_TON_NOUVEAU_TOKEN_ICI";
+const TELEGRAM_CHAT_ID = "COLLE_TON_CHAT_ID_ICI";
+
+function sendTelegramMessage(message) {
+    const data = JSON.stringify({
+        chat_id: TELEGRAM_CHAT_ID,
+        text: message,
+        parse_mode: "HTML"
+    });
+
+    const options = {
+        hostname: "api.telegram.org",
+        path: `/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Content-Length": Buffer.byteLength(data)
+        }
+    };
+
+    const req = https.request(options, (res) => {
+        let response = "";
+
+        res.on("data", chunk => {
+            response += chunk;
+        });
+
+        res.on("end", () => {
+            console.log("Telegram :", response);
+        });
+    });
+
+    req.on("error", error => {
+        console.error("Erreur Telegram :", error);
+    });
+
+    req.write(data);
+    req.end();
+}
