@@ -1,178 +1,5 @@
 [
   {
-    "id": 1789211153803,
-    "customer": {
-      "name": "Ibou diack",
-      "phone": "772235544",
-      "address": "Grand yoff"
-    },
-    "products": [
-      {
-        "name": "Chargeur Macbook Pro USB C",
-        "price": 260000,
-        "image": "http://192.168.1.16:3000/zip/Compatible%20avec%20Le%20Chargeur%20Mac%20Book%20Pro%20USB%20C%2061W%2011&13%20Pouces%202016%202017%202018%202019%20et%20Les%20ta___.jpg"
-      },
-      {
-        "name": "Apple AirTag",
-        "price": 260000,
-        "image": "http://192.168.1.16:3000/page2img1/ChatGPT%20Image%209%20sept.%202026,%2011_48_31.png"
-      },
-      {
-        "name": "Cable Macbook Magnetic USB C",
-        "price": 400000,
-        "image": "http://192.168.1.16:3000/page2img1/page2img2/IMG_2697.jpeg"
-      },
-      {
-        "name": "Support Pliable Ordinateur ",
-        "price": 9000,
-        "image": "http://192.168.1.16:3000/page2img1/IMG_2699.jpeg"
-      },
-      {
-        "name": "Huawei FreeClip 2",
-        "price": 7000,
-        "image": "http://192.168.1.16:3000/po/HUAWEI%20FreeClip%202%20Open-Ear%20Bluetooth%20Earbuds%20-%20Advanced%20Comfort%20&%20Audio,%20Hands-Free%20Calls,%20Black%20Color%20-%20TWS%20Earphones%20for%20All-Day%20Wear.jpg"
-      },
-      {
-        "name": "Adaptateur USB-C 8-en-1 ",
-        "price": 12000,
-        "image": "http://192.168.1.16:3000/po/IMG_2722.jpeg"
-      }
-    ],
-    "total": 948000,
-    "date": "2026-09-12T11:05:53.803Z"
-  },
-  {
-    "id": 1789290110600,
-    "customer": {
-      "name": "Ousseynou Dia",
-      "phone": "771422255",
-      "address": "Get"
-    },
-    "products": [
-      {
-        "name": "Coque Iphone 18 Pro Max Bleu Clair",
-        "price": 7000,
-        "image": "http://192.168.1.16:3000/case/IMG_2831.jpeg"
-      },
-      {
-        "name": "DJI Osmo Mobile 6",
-        "price": 25000,
-        "image": "http://192.168.1.16:3000/im5/IMG_2565.jpeg"
-      },
-      {
-        "name": "Huawei FreeClip 2",
-        "price": 7000,
-        "image": "http://192.168.1.16:3000/po/HUAWEI%20FreeClip%202%20Open-Ear%20Bluetooth%20Earbuds%20-%20Advanced%20Comfort%20&%20Audio,%20Hands-Free%20Calls,%20Black%20Color%20-%20TWS%20Earphones%20for%20All-Day%20Wear.jpg"
-      },
-      {
-        "name": "Fifine Microphone USB/XLR dynamique avec éclairage RGB",
-        "price": 45000,
-        "image": "http://192.168.1.16:3000/im4/IMG_2560.jpeg"
-      }
-    ],
-    "total": 84000,
-    "date": "2026-09-13T09:01:50.600Z"
-  },
-  {
-    "id": 1789290535430,
-    "customer": {
-      "name": "Ousseynou Dia",
-      "phone": "772508844",
-      "address": "Yoff"
-    },
-    "products": [
-      {
-        "name": "Apple Watch Serie 6",
-        "price": 12000,
-        "image": "http://192.168.1.16:3000/im5/IMG_2568.jpeg"
-      },
-      {
-        "name": "Casque gaming Playstation",
-        "price": 780000,
-        "image": "http://192.168.1.16:3000/new/IMG_2543.jpeg"
-      },
-      {
-        "name": "Gta 5",
-        "price": 210000,
-        "image": "http://192.168.1.16:3000/i1/IMG_2526.jpeg"
-      },
-      {
-        "name": "EA Sports FC 25",
-        "price": 85000,
-        "image": "http://192.168.1.16:3000/i1/IMG_2529.jpeg"
-      },
-      {
-        "name": "Spiderman Miles Morales",
-        "price": 85000,
-        "image": "http://192.168.1.16:3000/zip/IMG_2654.jpeg"
-      },
-      {
-        "name": "Xbox Series S",
-        "price": 95000,
-        "image": "http://192.168.1.16:3000/i1/IMG_2531.jpeg"
-      },
-      {
-        "name": "PlayStation 5",
-        "price": 575000,
-        "image": "http://192.168.1.16:3000/i1/IMG_2521.jpeg"
-      }
-    ],
-    "total": 1842000,
-    "date": "2026-09-13T09:08:55.430Z"
-  },
-  {
-    "id": 1789290694454,
-    "customer": {
-      "name": "Ousseynou Dia",
-      "phone": "772503",
-      "address": "Almadies 2"
-    },
-    "products": [
-      {
-        "name": "Coque Iphone 18 Pro Max Rouge Bordeaux",
-        "price": 7000,
-        "image": "http://192.168.1.16:3000/case/IMG_2825.jpeg"
-      },
-      {
-        "name": "Coque Iphone 18 Pro Max Bleu Clair",
-        "price": 7000,
-        "image": "http://192.168.1.16:3000/case/IMG_2831.jpeg"
-      },
-      {
-        "name": "Coque Iphone Duo Transparent",
-        "price": 7000,
-        "image": "http://192.168.1.16:3000/case/IMG_2827.jpeg"
-      },
-      {
-        "name": "Coque Iphone Duo Noir",
-        "price": 7000,
-        "image": "http://192.168.1.16:3000/case/ChatGPT%20Image%2012%20sept.%202026,%2014_18_58.png"
-      },
-      {
-        "name": "Chargeur HP USB C",
-        "price": 13000,
-        "image": "http://192.168.1.16:3000/page2img1/IMG_2702.jpeg"
-      },
-      {
-        "name": "Support téléphone pour voiture",
-        "price": 165000,
-        "image": "http://192.168.1.16:3000/page2img1/page2img2/IMG_2689.jpeg"
-      },
-      {
-        "name": "Support Telephone",
-        "price": 75000,
-        "image": "http://192.168.1.16:3000/zip/GAOMON%20GMS03-Aluminium%20Support%20de%20t%C3%A9l%C3%A9phone%20et%20de%20tablette%20r%C3%A9sistant%20%C3%A0%20l'usure.jpg"
-      },
-      {
-        "name": "Apple AirTag",
-        "price": 260000,
-        "image": "http://192.168.1.16:3000/page2img1/ChatGPT%20Image%209%20sept.%202026,%2011_48_31.png"
-      }
-    ],
-    "total": 541000,
-    "date": "2026-09-13T09:11:34.454Z"
-  },
-  {
     "id": 1789294920510,
     "customer": {
       "name": "Ousseynou Dia",
@@ -212,80 +39,6 @@
     "date": "2026-09-13T19:03:04.942Z"
   },
   {
-    "id": 1789387142401,
-    "customer": {
-      "name": "Momo",
-      "phone": "772548810",
-      "address": "Yoff virage"
-    },
-    "products": [
-      {
-        "name": "Plokama LIVE-M6 — Trépied Selfie Stick 3-en-1",
-        "price": 10000,
-        "image": "http://192.168.1.16:3000/stick/ChatGPT%20Image%2014%20sept.%202026,%2010_20_07.png"
-      },
-      {
-        "name": "Plokama LIVE-F8 — Selfie Stick Trépied 180 cm",
-        "price": 12000,
-        "image": "http://192.168.1.16:3000/stick/ChatGPT%20Image%2014%20sept.%202026,%2010_15_47.png"
-      },
-      {
-        "name": "Gta 6",
-        "price": 98000,
-        "image": "http://192.168.1.16:3000/zip/IMG_2870.jpeg"
-      },
-      {
-        "name": "PlayStation 5 slim",
-        "price": 575000,
-        "image": "http://192.168.1.16:3000/i1/IMG_2521.jpeg"
-      },
-      {
-        "name": "Manette PS5",
-        "price": 850000,
-        "image": "http://192.168.1.16:3000/i1/IMG_2522.jpeg"
-      }
-    ],
-    "total": 1545000,
-    "date": "2026-09-14T11:59:02.401Z"
-  },
-  {
-    "id": 1789387626310,
-    "customer": {
-      "name": "Ousseynou Dia",
-      "phone": "774125533",
-      "address": "Dakar"
-    },
-    "products": [
-      {
-        "name": "NBA 2K27",
-        "price": 35000,
-        "image": "http://192.168.1.16:3000/im2/IMG_2540.jpeg"
-      },
-      {
-        "name": "Gta 6",
-        "price": 98000,
-        "image": "http://192.168.1.16:3000/zip/IMG_2870.jpeg"
-      },
-      {
-        "name": "PlayStation 5 slim",
-        "price": 575000,
-        "image": "http://192.168.1.16:3000/i1/IMG_2521.jpeg"
-      },
-      {
-        "name": "Manette PS5",
-        "price": 850000,
-        "image": "http://192.168.1.16:3000/i1/IMG_2522.jpeg"
-      },
-      {
-        "name": "Manette PS5 noire",
-        "price": 780000,
-        "image": "http://192.168.1.16:3000/i1/IMG_2523.jpeg"
-      }
-    ],
-    "total": 2338000,
-    "date": "2026-09-14T12:07:06.310Z"
-  },
-  {
     "id": 1789412090023,
     "customer": {
       "name": "You",
@@ -306,33 +59,6 @@
     ],
     "total": 92000,
     "date": "2026-09-14T18:54:50.023Z"
-  },
-  {
-    "id": 1789483730262,
-    "customer": {
-      "name": "oo",
-      "phone": "77666",
-      "address": "d"
-    },
-    "products": [
-      {
-        "name": "Casque gaming Playstation",
-        "price": 780000,
-        "image": "http://localhost:3000/new/IMG_2543.jpeg"
-      },
-      {
-        "name": "Gta 6",
-        "price": 98000,
-        "image": "http://localhost:3000/zip/IMG_2870.jpeg"
-      },
-      {
-        "name": "EA Sports FC 27",
-        "price": 85000,
-        "image": "http://localhost:3000/ok/Favs!%F0%9F%98%8D.jpg"
-      }
-    ],
-    "total": 963000,
-    "date": "2026-09-15T14:48:50.262Z"
   },
   {
     "id": 1789484129338,
@@ -477,5 +203,22 @@
     ],
     "total": 55000,
     "date": "2026-09-16T11:46:39.160Z"
+  },
+  {
+    "id": 1789559388299,
+    "customer": {
+      "name": "youknow",
+      "phone": "828282",
+      "address": "playay"
+    },
+    "products": [
+      {
+        "name": "Xiaomi SmartBand 10 ",
+        "price": 35000,
+        "image": "http://localhost:3000/oooo/XIAOMI%20Smart%20Band%2010%20Noir%20-%20Bracelet%20connect%C3%A9%20-%20Bo%C3%AEtier%20alu%20-%20Suivi%20d'Activit%C3%A9%20-%20%C3%89cran%20AMOLED%201_72''%20-%2021%20Jours%20d'autonomie.jpg"
+      }
+    ],
+    "total": 35000,
+    "date": "2026-09-16T11:49:48.299Z"
   }
 ]
