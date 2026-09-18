@@ -2732,3 +2732,71 @@ body {
 }
 
 
+.free-delivery-banner {
+    width: 100%;
+    background: #4da3ff;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(77, 163, 255, 0.4);
+}
+
+.pop-word {
+    display: inline-block;
+    opacity: 0;
+    transform: scale(0.3) translateY(10px);
+    animation: wordPop 5s infinite;
+}
+
+/* Chaque mot apparaît légèrement après le précédent */
+.pop-word:nth-child(1) { animation-delay: 0s; }
+.pop-word:nth-child(2) { animation-delay: 0.12s; }
+.pop-word:nth-child(3) { animation-delay: 0.24s; }
+.pop-word:nth-child(4) { animation-delay: 0.36s; }
+.pop-word:nth-child(5) { animation-delay: 0.48s; }
+.pop-word:nth-child(6) { animation-delay: 0.60s; }
+.pop-word:nth-child(7) { animation-delay: 0.72s; }
+.pop-word:nth-child(8) { animation-delay: 0.84s; }
+.pop-word:nth-child(9) { animation-delay: 0.96s; }
+
+@keyframes wordPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) translateY(10px);
+    }
+
+    8% {
+        opacity: 1;
+        transform: scale(1.15) translateY(0);
+    }
+
+    12% {
+        transform: scale(1);
+    }
+
+    65% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    78% {
+        opacity: 0;
+        transform: scale(0.5) translateY(-10px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+}
+
+@media (max-width: 600px) {
+    .free-delivery-banner {
+        font-size: 12px;
+        padding: 8px 4px;
+    }
+}
