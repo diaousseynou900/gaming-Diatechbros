@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": 1790174601759,
+    "customer": {
+      "name": "Ousseynou Dia",
+      "phone": "772542145",
+      "address": "The place next to the yeah"
+    },
+    "products": [
+      {
+        "name": "EA Sports FC 27 PS5",
+        "price": 65000,
+        "image": "http://192.168.1.6:3000/fc/Kyky%F0%9F%A4%8D%20(1).jpg"
+      },
+      {
+        "name": "Manette PS5",
+        "price": 55000,
+        "image": "http://192.168.1.6:3000/i1/IMG_2522.jpeg"
+      },
+      {
+        "name": "Casque gaming Playstation",
+        "price": 65000,
+        "image": "http://192.168.1.6:3000/new/IMG_2543.jpeg"
+      }
+    ],
+    "total": 185000,
+    "date": "2026-09-23T14:43:21.759Z"
+  }
+]

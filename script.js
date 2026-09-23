@@ -1184,6 +1184,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+    
+
+
     // =====================================================
     // SYNCHRONISATION DU PANIER ENTRE LES ONGLETS
     // =====================================================
